@@ -18,7 +18,7 @@ while True:
         for task in task_storage:
             print(task)
     elif menu_select == "D":
-        task = input("Enter the index of the task you would like to delete (Starting with 0a): ")
+        task = input("Enter the index of the task you would like to delete (Starting with 0): ")
         task_storage.pop(int(task))
     elif menu_select == "Q":
         print("Goodbye!")
