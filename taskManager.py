@@ -1,9 +1,5 @@
 task_storage = []
 
-print("Before input")
-name = input("What is your name? ")
-print("Hello,", name)
-
 while True:
 
     menu = """
@@ -22,10 +18,11 @@ while True:
         for task in task_storage:
             print(task)
     elif menu_select == "D":
-        task = input("Enter the index of the task you would like to delete: ")
+        task = input("Enter the index of the task you would like to delete (Starting with 0a): ")
         task_storage.pop(int(task))
     elif menu_select == "Q":
-        exit()
+        print("Goodbye!")
+        break
     else:
         print("Invalid selection. Please try again.")
 
